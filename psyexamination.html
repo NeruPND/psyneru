@@ -1,0 +1,123 @@
+i<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нерюнгринский психоневрологическй диспансер</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <img src="img/logo.png" alt="Psychiatry Emblem" width="100" height="100">
+    <h1>Нерюнгринский психоневрологическй диспансер</h1>
+</header>
+<nav>
+    <a href="about.html">Сведения о МО</a>
+    <a href="personnel.html">Медперсонал</a>
+    <a href="services.html">Услуги</a>
+    <a href="patients.html">Для пациентов</a>
+    <a href="specialists.html">Для специалистов</a>
+    <a href="appointment.html">Запись на приём</a>
+</nav>
+<div class="container">
+    <h2>Введите данные из направления работодателя</h2>
+    <form id="appointmentForm">
+        <label for="name">ФИО:</label><br>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="birthdate">Дата рождения:</label><br>
+        <input type="date" id="birthdate" name="birthdate" required>
+        <br><br>
+        <label>Пол:</label><br>
+        <select id="sex" name="sex" required>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+        </select>     
+        <br><br>
+        <label for="employer">Наименование работодателя:</label><br>
+        <input type="text" id="employer" name="employer" required>
+        <br><br>
+        <label for="employer_email">Адрес электронной почты работодателя:</label><br>
+        <input type="email" id="employer_email" name="employer_email" required>
+        <br><br>
+        <label for="employer_phone">Контактный номер телефона работодателя:</label><br>
+        <input type="tel" id="employer_phone" name="employer_phone" required>
+        <br><br>
+        <label for="okved">ОКВЭД:</label><br>
+        <input type="text" id="okved" name="okved" required>
+        <br><br>
+        <label for="department">Наименование структурного подразделения работодателя (при наличии):</label><br>
+        <input type="text" id="department" name="department">
+        <br><br>
+        <label for="occupation">Должность:</label><br>
+        <input type="text" id="occupation" name="occupation" required>
+        <br><br>
+        <label for="activity">Вид деятельности (виды), осуществляемые работником:</label><br>
+        <select id="activity" name="activity" required>
+            <option value="">Выберите вид деятельности</option>
+            <option value="activity1">П.1. Деятельность, связанная с управлением транспортными средствами или управлением движением транспортных средств по профессиям и должностям согласно перечню работ, профессий, должностей, непосредственно связанных с управлением транспортными средствами или управлением движением транспортных средств</option>
+            <option value="activity2">П.2. Деятельность, связанная с производством, транспортировкой, хранением и применением взрывчатых материалов и веществ</option>
+            <option value="activity3">П.3. Деятельность в области использования атомной энергии, осуществляемая работниками объектов использования атомной энергии при наличии у них разрешений, выдаваемых органами Федеральной службы по экологическому, технологическому и атомному надзору</option>
+            <option value="activity4">П.4. Деятельность, связанная с оборотом оружия</option>
+            <option value="activity5">П.5. Деятельность, связанная с проведением аварийно-спасательных работ, а также с работой, выполняемой пожарной охраной при тушении пожаров.</option>
+            <option value="activity6">П.6. Деятельность, непосредственно связанная с управлением подъемными механизмами (кранами), подлежащими учету в органах Федеральной службы по экологическому, технологическому и атомному надзору</option>
+            <option value="activity7">П.7. Деятельность по непосредственному забору, очистке и распределению воды питьевых нужд систем централизованного водоснабжения</option>
+            <option value="activity8">П.8. Педагогическая деятельность в организациях, осуществляющих образовательную деятельность</option>
+            <option value="activity9">П.9. Деятельность по присмотру и уходу за детьми</option>
+            <option value="activity10">П.10. Деятельность, связанная с работами с использованием сведений, составляющими государственную тайну</option>
+            <option value="activity11">П.11. Деятельность в сфере электроэнергетики, связанная с организацией и осуществлением монтажа, наладки, технического обслуживания, ремонта, управления режимом работы электроустановок</option>
+            <option value="activity12">П.12. Деятельность в сфере теплоснабжения, связанная с организацией и осуществлением монтажа, наладки, технического обслуживания, ремонта, управления режимом работы объектов теплоснабжения</option>
+            <option value="activity13">П.13. Деятельность, непосредственно связанная с обслуживанием оборудования, работающего под избыточным давлением более 0,07 МПа и подлежащего учету в органах Федеральной службы по экологическому, технологическому и атомному надзору</option>
+            <option value="activity14">П.14. Деятельность, непосредственно связанная с диспетчеризацией производственных процессов в химической (нефтехимической) промышленности, включая деятельность операторов производственного оборудования в химической (нефтехимической) промышленности (при производстве химических веществ 1 и 2 классов опасности)</option>
+            <option value="activity15">П.15. Деятельность, связанная с добычей угля подземным способом</option>
+            <option value="activity4">П.16. Деятельность, связанная с эксплуатацией, ремонтом скважин и установок при переработке высокосернистой нефти, очистке нефти и газа от сероводорода, очистке нефтеналивных судов, цистерн, резервуаров, добычей и обработкой озокерита, экстракционноозокеритовым производством</option>
+            <option value="activity17">П.17. Деятельность, непосредственно связанная с контактами с возбудителями инфекционных заболеваний - патогенными микроорганизмами I и II группы патогенности, возбудителями особо опасных инфекций, а также с биологическими токсинами (микробного, растительного и животного происхождения) или с доступом к указанным субстанциям</option>
+        </select>  
+        <br><br>
+        <label for="email">Электронная почта (при наличии):</label><br>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <label for="phone">Телефон:</label><br>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+        <label for="date">Дата записи:</label><br>
+        <input type="date" id="date" name="date" required>
+        <br><br>
+        <label for="time">Время записи:</label><br>
+        <input type="time" id="time" name="time" required>
+        <br><br>     
+        <button type="submit">Записаться</button>
+    </form>
+</div>
+<footer>
+    <p>&copy; 2024 Нерюнгринский психоневрологический диспансер. Все права защищены.</p>
+</footer>
+
+<script>
+    document.getElementById('appointmentForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        
+        // Get form values
+        const service = document.getElementById('service').value;
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const date = document.getElementById('date').value;
+        const time = document.getElementById('time').value;
+        const doctor = document.getElementById('doctor').value;
+        
+        // Validate form values
+        if (service === '' || name === '' || email === '' || phone === '' || date === '' || time === '' || doctor === '') {
+            alert('Пожалуйста, заполните все поля.');
+            return;
+        }
+        
+        // If validation passes, proceed with form submission
+        alert('Запись успешно отправлена!');
+        
+        // Optionally, you can submit the form data to the server here
+        // For example, using fetch or XMLHttpRequest
+    });
+</script>
+</body>
+</html>
