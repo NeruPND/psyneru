@@ -32,6 +32,15 @@ p {
     line-height: 1.6;
     margin-bottom: 20px;
 }
+.form {
+    text-align: left;
+    width: 300px; /* Устанавливаем фиксированную ширину для select */
+    white-space: normal; /* Разрешаем перенос текста на новую строку */
+
+}
+input[type="text"] {
+    width: 400px;
+}
 footer {
     background-color: #333;
     color: white;
