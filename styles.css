@@ -36,7 +36,6 @@ p {
     text-align: left;
     width: 300px; /* Устанавливаем фиксированную ширину для select */
     white-space: normal; /* Разрешаем перенос текста на новую строку */
-
 }
 input[type="text"] {
     width: 400px;
