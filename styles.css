@@ -9,15 +9,31 @@ header {
     padding: 20px;
     text-align: center;
 }
+header a {
+    text-decoration: none;
+}
 nav {
     background-color: #f2f2f2;
-    text-align: center;
-    padding: 10px;
+    height: 50px;
+}
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 nav a {
     text-decoration: none;
     color: #333;
-    margin: 0 10px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 100%; /* Заполняем всю высоту секции nav */
+}
+nav a:hover {
+    text-decoration: none;
+    color: #f7eeee;
+    background-color: rgb(22, 21, 21);
 }
 .container {
     max-width: 800px;
